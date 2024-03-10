@@ -1,0 +1,18 @@
+"""
+Masala: 3 xonali natural son berilgan.
+Uning raqamlari yig`indisini aniqlovchi dastur tuzilsin;
+08.03.2024
+"""
+
+son = input("\n3 xonali son kiriting: ")
+try:
+    son = int(son)
+except:
+    natija = "\nNoto`g`ri qiymat kiritildi!\n"
+else:
+    if 99 < son < 1000:
+        natija = f"{son} sonini raqamlar yig`indisi {son//100 + son//10%10 + son%10} ga teng.\n"
+    else:
+        natija = "\nNoto`g`ri qiymat kiritildi!\n"
+
+print(natija)
